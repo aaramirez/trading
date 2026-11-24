@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KX76XF8R');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Análisis técnico y trading algorítmico</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Del gráfico de velas al robot que opera solo: análisis técnico con sus fórmulas, sistemas de *trading*, *backtesting* y sus sesgos, tamaño de posición, y robots en MQL y Python con los controles que evitan un desastre. No es una recomendación de inversión.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KX76XF8R"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="wrap" data-page="index">
+<header class="topbar"><a class="brand" href="index.html">Trading <b>algorítmico</b></a><span class="eyebrow">Curso visual e interactivo · Industrias y finanzas</span><a class="al-sitio" href="https://aaramirez.github.io/">← Todos los cursos</a></header>
+<div class="layout">
+<nav class="toc" id="toc" aria-label="Ruta de aprendizaje"></nav>
+<main>
+
+<header class="hero">
+  <span class="eyebrow">Curso visual e interactivo · Industrias y finanzas</span>
+  <h1>Una estrategia que gana en el gráfico del pasado casi siempre pierde en el mercado de mañana: cómo saber cuál no</h1>
+  <p class="lede">Trazar una media móvil es fácil; saber si la regla que la usa tiene ventaja real, o solo se ajustó a la historia, es lo difícil. Este curso convierte el análisis técnico en reglas que se pueden probar, las somete a un *backtesting* honesto, decide cuánto arriesgar en cada operación y las lleva a un robot que opera con límites y un botón de apagado.</p>
+</header>
+
+<section>
+  <h2>Cómo usar este curso</h2>
+  <div class="prose">
+    <p><b>Estado.</b> El curso está en preparación. La <a href="temario.html">tabla de contenido</a> ya tiene los 14 capítulos con sus secciones y sus laboratorios, y está en revisión.</p>
+    <p><b>Para quién es.</b> Estudiantes universitarios y profesionales de finanzas, datos o desarrollo. Conviene saber estadística básica (media, desviación estándar, prueba de hipótesis) y algo de programación; el capítulo de Python supone saber usar *pandas*. Los instrumentos (acciones, futuros, divisas, opciones) están en Inversiones; los tipos de órdenes, el libro de órdenes y cómo funciona un bróker, en Sociedades de corretaje; y los modelos de volatilidad y la simulación, en Finanzas cuantitativas. Este curso no es una recomendación de inversión ni de *trading*: enseña a evaluar estrategias, no a elegir una.</p>
+    <p><b>Cómo está hecho.</b> Una sola estrategia recorre el curso: un cruce de medias móviles sobre un índice bursátil con datos históricos públicos. Nace como una idea en el gráfico, se vuelve un sistema con reglas, se prueba, se descubren sus sesgos, se le pone un tamaño de posición y termina como robot en una cuenta de práctica. Los laboratorios corren en la página con datos históricos o simulados: mueves un periodo, un *stop* o el riesgo por operación y ves cambiar la curva de capital. Ningún laboratorio usa dinero real ni sugiere operar.</p>
+  </div>
+</section>
+
+<details class="stage" id="temario" open><summary><h2><span class="pn">Empieza aquí</span> Tabla de contenido</h2></summary>
+  <div class="mods">
+    <a class="mod" href="temario.html"><span class="n">≡</span><b>Tabla de contenido</b><p>Cada capítulo con sus secciones y sus laboratorios.</p></a>
+  </div>
+</details>
+
+<details class="stage" id="parte-1" open><summary><h2><span class="pn">Parte 1</span> El mercado visto por un trader</h2><span class="cuenta" data-etapa-cuenta="1"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="que-es-hacer-trading"><span class="n">01</span><b>Qué es hacer *trading* y por qué la mayoría pierde</b><p>*Trading* frente a inversión, los estilos según el horizonte y la evidencia de que ganarle al mercado es difícil.</p></div>
+    <div class="mod soon" data-id="precios-velas-y-volumen"><span class="n">02</span><b>Precios, velas, volumen y datos de mercado</b><p>Cómo se registra un precio, cómo se dibuja y qué trampas traen los datos antes de analizar nada.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-2" open><summary><h2><span class="pn">Parte 2</span> Análisis técnico</h2><span class="cuenta" data-etapa-cuenta="2"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="tendencia-y-patrones"><span class="n">03</span><b>Tendencia, soportes, resistencias y patrones gráficos</b><p>La lectura visual del precio: qué es una tendencia, dónde se detiene y por qué dos analistas ven cosas distintas.</p></div>
+    <div class="mod soon" data-id="indicadores-tecnicos"><span class="n">04</span><b>Indicadores técnicos: medias, osciladores y volatilidad</b><p>Las fórmulas detrás de los indicadores más usados y qué miden en realidad.</p></div>
+    <div class="mod soon" data-id="funciona-el-analisis-tecnico"><span class="n">05</span><b>¿Funciona el análisis técnico? Probarlo con estadística</b><p>Cómo convertir una regla técnica en una hipótesis y qué dice la evidencia académica.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-3" open><summary><h2><span class="pn">Parte 3</span> Del indicador al sistema</h2><span class="cuenta" data-etapa-cuenta="3"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="anatomia-de-un-sistema"><span class="n">06</span><b>Anatomía de un sistema de *trading*</b><p>Entrada, salida, filtros y *stops*: las piezas de una estrategia escrita y las familias de estrategias.</p></div>
+    <div class="mod soon" data-id="backtesting-y-metricas"><span class="n">07</span><b>*Backtesting* y las métricas de una estrategia</b><p>Cómo se simula una estrategia sobre la historia y cómo se lee su resultado.</p></div>
+    <div class="mod soon" data-id="sesgos-del-backtest"><span class="n">08</span><b>Los sesgos del *backtesting*: por qué el pasado promete de más</b><p>Las formas en que un *backtesting* se engaña a sí mismo y las técnicas para detectarlas.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-4" open><summary><h2><span class="pn">Parte 4</span> Riesgo y dinero</h2><span class="cuenta" data-etapa-cuenta="4"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="tamano-de-posicion"><span class="n">09</span><b>Tamaño de posición, criterio de Kelly y riesgo de ruina</b><p>La misma estrategia puede crecer o quebrar según cuánto se arriesga en cada operación.</p></div>
+    <div class="mod soon" data-id="cartera-de-estrategias"><span class="n">10</span><b>Cartera de estrategias, regímenes y degradación</b><p>Combinar estrategias poco correlacionadas, reconocer cuándo el mercado cambió y cuándo apagar un sistema.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-5" open><summary><h2><span class="pn">Parte 5</span> Robots</h2><span class="cuenta" data-etapa-cuenta="5"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="arquitectura-de-un-robot"><span class="n">11</span><b>Arquitectura de un robot de *trading*</b><p>Las piezas de un sistema automático: datos, señal, riesgo, ejecución y vigilancia.</p></div>
+    <div class="mod soon" data-id="robots-en-mql"><span class="n">12</span><b>Robots en MQL para MetaTrader</b><p>La estrategia del curso como asesor experto (*Expert Advisor*) en la plataforma más usada en divisas y CFD.</p></div>
+    <div class="mod soon" data-id="robots-en-python"><span class="n">13</span><b>Robots en Python</b><p>La misma estrategia con las bibliotecas de Python: del *backtesting* a una cuenta de práctica por API.</p></div>
+    <div class="mod soon" data-id="operar-en-produccion"><span class="n">14</span><b>Operar en producción: controles, fallas y regulación</b><p>Lo que sale mal cuando un robot opera solo, los controles que lo contienen y las reglas que aplican.</p></div>
+  </div>
+</details>
+
+
+
+<nav class="pager" id="pager" aria-label="Capítulo anterior y siguiente"></nav>
+</main>
+</div>
+<footer><span>Curso abierto de aaramirez.github.io.</span><span>Sitio publicado: <a href="https://github.com/aaramirez/trading" target="_blank" rel="noopener">github.com/aaramirez/trading</a></span></footer>
+</div>
+<script src="assets/lab.js"></script>
+</body>
+</html>
